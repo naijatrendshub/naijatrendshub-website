@@ -1,187 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NaijaTrendsHub - Nigerian Social Media Content Platform</title>
-    <meta name="description" content="AI-powered content automation platform bringing trending Nigerian news and entertainment to social media">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #00A651 0%, #008033 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            flex: 1;
-        }
-        
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        h1 {
-            color: #00A651;
-            font-size: 2em;
-        }
-        
-        nav a {
-            margin-left: 30px;
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        nav a:hover {
-            color: #00A651;
-        }
-        
-        .hero {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 60px 40px;
-            margin: 40px 0;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .hero h2 {
-            font-size: 2.5em;
-            color: #00A651;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        
-        .platforms {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        .platform-badge {
-            background: #00A651;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        
-        footer {
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-        
-        footer a {
-            color: #00A651;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 1.8em;
-            }
-            
-            .hero p {
-                font-size: 1em;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            nav a {
-                margin: 0 15px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaijaTrendsHub - Nigerian Social Media Content Platform</title>
+  <meta name="description" content="AI-powered content automation platform bringing trending Nigerian news and entertainment to social media." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #00A651 0%, #008033 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; flex: 1; }
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 { color: #00A651; font-size: 2em; }
+    nav a {
+      margin-left: 24px;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: #00A651; }
+    .hero {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 60px 40px;
+      margin: 40px 0;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .hero h2 { font-size: 2.5em; color: #00A651; margin-bottom: 20px; }
+    .hero p { font-size: 1.15em; color: #555; margin-bottom: 18px; }
+    .section {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 32px 32px;
+      margin: 24px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .section h3 { color: #00A651; margin-bottom: 12px; font-size: 1.35em; }
+    .section ul { margin-left: 18px; margin-top: 10px; color: #444; }
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .platform-badge {
+      background: #00A651;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 28px 18px;
+      margin-top: 30px;
+    }
+    footer a { color: #00A651; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .muted { opacity: 0.85; font-size: 0.95em; }
+    @media (max-width: 768px) {
+      .hero { padding: 42px 20px; }
+      .hero h2 { font-size: 1.8em; }
+      .header-content { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 12px; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>🇳🇬 NaijaTrendsHub</h1>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/terms.html">Terms</a>
-                <a href="/privacy.html">Privacy</a>
-                <a href="mailto:contact@naijatrendshub.com">Contact</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="hero">
-            <h2>Nigerian Stories, Globally Amplified</h2>
-            <p>
-                AI-powered content platform bringing trending Nigerian news, sports, and entertainment 
-                to millions across social media.
-            </p>
-            
-            <div class="platforms">
-                <span class="platform-badge">📺 YouTube</span>
-                <span class="platform-badge">📱 TikTok</span>
-                <span class="platform-badge">📸 Instagram</span>
-                <span class="platform-badge">🐦 X/Twitter</span>
-                <span class="platform-badge">💼 LinkedIn</span>
-                <span class="platform-badge">📲 Telegram</span>
-                <span class="platform-badge">📘 Facebook</span>
-                <span class="platform-badge">👻 Snapchat</span>
-                <span class="platform-badge">🎮 Twitch</span>
-                <span class="platform-badge">🟣 Farcaster</span>
-                <span class="platform-badge">🦋 Bluesky</span>
-            </div>
-        </div>
+  <header>
+    <div class="header-content">
+      <h1>NaijaTrendsHub</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/support.html">Support</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="mailto:naijatrendshub@gmail.com">Contact</a>
+      </nav>
     </div>
-    
-    <footer>
-        <p>&copy; 2026 NaijaTrendsHub. All rights reserved.</p>
-        <p>
-            <a href="/terms.html">Terms of Service</a> | 
-            <a href="/privacy.html">Privacy Policy</a> | 
-            <a href="mailto:contact@naijatrendshub.com">contact@naijatrendshub.com</a>
-        </p>
-        <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
-            Made with ❤️ in Nigeria
-        </p>
-    </footer>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Nigerian Stories, Globally Amplified</h2>
+      <p>NaijaTrendsHub is an AI-powered content automation platform that helps users turn trending Nigerian news, sports, and entertainment into platform-native posts.</p>
+      <p class="muted">We publish only with your authorization after you connect your social accounts using official platform authentication (OAuth).</p>
+
+      <div class="platforms" aria-label="Supported platforms">
+        <span class="platform-badge">YouTube</span>
+        <span class="platform-badge">TikTok</span>
+        <span class="platform-badge">Instagram</span>
+        <span class="platform-badge">X (Twitter)</span>
+        <span class="platform-badge">LinkedIn</span>
+        <span class="platform-badge">Telegram</span>
+        <span class="platform-badge">Facebook</span>
+        <span class="platform-badge">Snapchat</span>
+        <span class="platform-badge">Twitch</span>
+        <span class="platform-badge">Farcaster</span>
+        <span class="platform-badge">Bluesky</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>How it works</h3>
+      <ul>
+        <li>You connect a social media account via the platform’s authorization flow.</li>
+        <li>NaijaTrendsHub generates original captions/scripts and prepares media for publishing.</li>
+        <li>You control what gets published (and can revoke access at any time).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Transparency</h3>
+      <ul>
+        <li>We do not ask for your social media passwords.</li>
+        <li>We use access tokens provided by the platform to publish on your behalf.</li>
+        <li>You can request deletion of your data via our Support page.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 NaijaTrendsHub. All rights reserved.</p>
+    <p style="margin-top: 10px;">
+      <a href="/about.html">About</a> ·
+      <a href="/support.html">Support</a> ·
+      <a href="/terms.html">Terms of Service</a> ·
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="mailto:naijatrendshub@gmail.com">naijatrendshub@gmail.com</a>
+    </p>
+    <p class="muted" style="margin-top: 12px;">
+      Operator: Obinna Frank Ibekwe · Address: Hammerweg 10, 83022, Germany
+    </p>
+  </footer>
 </body>
 </html>
