@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - NaijaTrendsHub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: linear-gradient(135deg, #00A651 0%, #008033 100%);
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(255,255,255,0.95);
+      padding: 18px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 { color: #00A651; font-size: 1.6em; }
+    nav a { margin-left: 20px; color: #333; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #00A651; }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255,255,255,0.97);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    h2 { color: #00A651; margin-top: 24px; margin-bottom: 12px; }
+    p { margin-bottom: 14px; }
+    ul { margin: 12px 0 12px 24px; }
+    li { margin-bottom: 8px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.9em;
+    }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>NaijaTrendsHub</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/support.html">Support</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 style="color: #00A651; font-size: 2.2em;">About NaijaTrendsHub</h1>
+
+    <h2>What we do</h2>
+    <p>NaijaTrendsHub is an AI-powered content automation platform designed to help creators and media organizations publish trending Nigerian news, sports, and entertainment across multiple social media platforms.</p>
+
+    <h2>How it works</h2>
+    <p>Users connect their social media accounts via official platform authorization (OAuth). Our system then:</p>
+    <ul>
+      <li>Analyzes trending Nigerian content from verified news sources</li>
+      <li>Generates platform-optimized captions, scripts, and media</li>
+      <li>Publishes content to your connected accounts (with your authorization)</li>
+    </ul>
+
+    <h2>Platforms we support</h2>
+    <p>We integrate with TikTok, YouTube, Instagram, X (Twitter), LinkedIn, Facebook, Telegram, Snapchat, Twitch, Farcaster, and Bluesky.</p>
+
+    <h2>TikTok integration (what we use)</h2>
+    <p>For TikTok specifically, NaijaTrendsHub uses the following official TikTok for Developers products:</p>
+    <ul>
+      <li><strong>Login Kit:</strong> To authenticate users and verify identity</li>
+      <li><strong>Content Posting API:</strong> To publish videos on your behalf (with permission)</li>
+      <li><strong>Display API:</strong> To retrieve basic profile information (username, follower count, etc.)</li>
+    </ul>
+    <p>We request only the minimum scopes necessary:</p>
+    <ul>
+      <li><code>user.info.profile</code> – Read profile data</li>
+      <li><code>user.info.stats</code> – Read follower/video counts</li>
+    </ul>
+
+    <h2>Our mission</h2>
+    <p>We amplify Nigerian stories to global audiences while respecting platform guidelines, user privacy, and content authenticity.</p>
+
+    <h2>Operator</h2>
+    <p><strong>Obinna Frank Ibekwe</strong><br>Hammerweg 10, 83022, Germany<br>Email: <a href="mailto:naijatrendshub@gmail.com">naijatrendshub@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <p><a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a> · <a href="/support.html">Support</a></p>
+  </footer>
+</body>
+</html>
