@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NaijaTrendsHub - AI-Powered Nigerian Content Platform</title>
   <meta name="description" content="Transform trending Nigerian stories into viral social media content across 11 platforms" />
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="apple-touch-icon" href="/logo.png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
@@ -53,13 +55,15 @@
       align-items: center;
     }
 
-    .logo {
-      font-size: 1.6em;
-      font-weight: 700;
-      background: linear-gradient(135deg, #00FF87, #00A651);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .logo-img {
+      height: 45px;
+      width: auto;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05);
     }
 
     nav a {
@@ -305,6 +309,7 @@
       .hero p { font-size: 1.1em; }
       nav a { margin-left: 16px; font-size: 0.9em; }
       .platforms-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+      .logo-img { height: 35px; }
     }
   </style>
 </head>
@@ -313,7 +318,9 @@
 
   <header>
     <div class="header-content">
-      <div class="logo">NaijaTrendsHub</div>
+      <a href="/">
+        <img src="/logo.png" alt="NaijaTrendsHub" class="logo-img">
+      </a>
       <nav>
         <a href="/">Home</a>
         <a href="/about.html">About</a>
